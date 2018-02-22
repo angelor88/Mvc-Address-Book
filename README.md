@@ -1,4 +1,4 @@
-# _MVC Templeteß_
+# _MVC Templete_
 
 #### _This web application allos costumer to order online pizza from Angelo's Pizza! January 26, 2018_
 
