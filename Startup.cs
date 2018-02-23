@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MvcTemplete
+namespace MvcAddressBook
 {
     public class Startup
     {
@@ -25,7 +25,7 @@ namespace MvcTemplete
 
         public void Configure(IApplicationBuilder app)
         {
-            // app.UseDeveloperExceptionPage(); //Debbugger razor views turn it On/Off
+            app.UseDeveloperExceptionPage(); //Debbugger razor views turn it On/Off
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

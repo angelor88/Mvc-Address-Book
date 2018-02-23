@@ -1,6 +1,6 @@
-# _MVC Templete_
+# _Address Book_
 
-#### _This web application allos costumer to order online pizza from Angelo's Pizza! January 26, 2018_
+#### _ January 26, 2018_
 
 #### By _**Angelo Russoniello**_
 
