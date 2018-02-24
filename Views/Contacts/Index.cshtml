@@ -2,9 +2,21 @@
 <ul>
   @foreach(var contact in Model)
   {
-    <li>@contact.GetDescription()</li>
+    <li>
+        Name: @contact.GetName()<br>
+        Phone Number: @contact.GetPhone()<br>
+        Address: @contact.GetAddress()
+    </li>
+
   }
 </ul>
+
+
+
+
+
+
+
 <p><a href="/contacts/new">Add a new contact.</a></p>
 <form action="/contacts/delete" method="post">
   <button type="submit" name="button">Clear All Items</button>

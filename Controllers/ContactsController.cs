@@ -20,8 +20,12 @@ namespace MvcAddressBook.Controllers
     [HttpPost("/contacts")]
     public ActionResult Create()
     {
-      Contact newContact = new Contact (Request.Form["new-contact"]);
-      newContact.save();
+
+      string newName = (Request.Form["new-contact"]);
+      string newPhone = (Request.Form["new-contact-phone"]);
+      string newAddress = (Request.Form["new-contact-address"]);
+      Contact newContact = new Contact (newName, newPhone, newAddress);
+      newContact.Save();
       List<Contact> allContacts = Contact.GetAll();
       return View ("Index", allContacts);
     }
